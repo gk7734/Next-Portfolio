@@ -68,7 +68,7 @@ export default function Home() {
                 h-full absolute mix-blend-color-dodge translate-z-0'>
                 </div>
                 {/*particles*/}
-                <div>Particles</div>
+                <ParticlesContainer/>
                 {/*Avatar Img*/}
                 <motion.div variants={fadeIn('up', 0.5)}
                             initial='hidden'
