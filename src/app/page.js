@@ -12,9 +12,17 @@ import {motion} from 'framer-motion'
 // variants
 import {fadeIn} from '../variants'
 
+function handleContextMenu(e) {
+    e.preventDefault();
+}
+
+function handleMouseDown(e) {
+    e.preventDefault();
+}
+
 export default function Home() {
     return (
-        <div className='bg-primary/60 h-full '>
+        <div className='bg-primary/60 h-full ' onContextMenu={handleContextMenu} onMouseDown={handleMouseDown} onDragStart={handleMouseDown}>
             {/*text*/}
             <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30
             to-black/10'>
@@ -37,9 +45,7 @@ export default function Home() {
                               exit='hidden'
                               className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
                     >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias, aut, explicabo fugiat
-                        illo iure nemo nesciunt numquam obcaecati odio placeat quasi repellat repellendus sed soluta
-                        tempore totam vero, voluptatibus?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos doloremque doloribus fugit magni minima modi nam nemo nesciunt nulla optio, reprehenderit tempora. A aliquid dolorem, excepturi hic libero nam nisi!
                     </motion.p>
                     {/*btn*/}
                     <motion.div variants={fadeIn('down', 0.4)}

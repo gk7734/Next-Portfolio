@@ -22,7 +22,10 @@ import {AnimatePresence, motion} from 'framer-motion'
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="ko">
+      <head>
+        <title>GK's Portfolio</title>
+      </head>
       <body className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable}
        font-sora relative`}>
         <TopLeftImg />

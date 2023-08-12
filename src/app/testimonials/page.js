@@ -1,5 +1,5 @@
 function Testimonials() {
-  return <div>Testimonials</div>;
+  return <p>rorem </p>;
 }
 
 export default Testimonials;
