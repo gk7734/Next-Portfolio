@@ -17,7 +17,8 @@ export const metadata = {
 import Nav from '../components/Nav'
 import Header from '../components/Header'
 import TopLeftImg from '../components/TopLeftImg'
-import {} from 'framer-motion'
+import Transition from '../components/Transition'
+import {AnimatePresence, motion} from 'framer-motion'
 
 export default function RootLayout({ children }) {
   return (
