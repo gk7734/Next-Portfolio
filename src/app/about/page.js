@@ -3,30 +3,56 @@
 import React, {useState} from "react";
 
 // icons
-import {FaCss3, FaHtml5, FaJs, FaReact, FaFigma, FaWordpress} from "react-icons/fa";
-import {SiAdobephotoshop, SiAdobexd, SiFramer, SiNextdotjs} from "react-icons/si";
+import {FaCss3, FaHtml5, FaJs, FaReact, FaFigma, FaPython} from "react-icons/fa";
+import {
+    SiCodepen,
+    SiGithub, SiMaterialdesign,
+    SiNextdotjs,
+    SiPycharm,
+    SiTailwindcss, SiTypescript, SiVuedotjs,
+    SiWebstorm
+} from "react-icons/si";
 
 // about Data
 const aboutData = [
     {
-        title: 'skills',
+        title: 'Stack',
         info: [
+            {
+                title: 'Lang',
+                icons: [
+                    <FaC />,
+                    <FaPython />,
+                    <FaJs />,
+                    <SiTypescript />
+                ]
+            },
             {
                 title: 'Web Development',
                 icons: [
                     <FaHtml5 />,
                     <FaCss3 />,
+                    <SiTailwindcss />,
                     <FaJs />,
+                    <SiTypescript />,
                     <FaReact />,
+                    <SiVuedotjs />,
                     <SiNextdotjs />,
-                    <SiFramer />,
-                    <FaWordpress />,
+
                 ],
             },
             {
                 title: 'UI/UX Design',
-                icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+                icons: [<FaFigma />, <SiMaterialdesign />, <SiCodepen />],
             },
+            {
+                title: 'Tools',
+                icons: [
+                    <SiWebstorm />,
+                    <SiPycharm />,
+                    <SiGithub />
+                ],
+            }
         ],
     },
     {
@@ -84,13 +110,25 @@ import Circles from "../../components/Circles";
 
 // framer motion
 import {motion} from 'framer-motion'
-import {fadeIn} from "../../variants";
+import {fadeIn} from "@/variants";
+
+// counter
+import CountUp from "react-countup";
+import {FaC} from "react-icons/fa6";
+
+function handleContextMenu(e) {
+    e.preventDefault();
+}
+
+function handleMouseDown(e) {
+    e.preventDefault();
+}
 
 function About() {
     const [index, setIndex] = useState(0)
     console.log(index)
     return (
-        <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
+        <div className='h-full bg-primary/30 py-32 text-center xl:text-left' onContextMenu={handleContextMenu} onMouseDown={handleMouseDown} onDragStart={handleMouseDown}>
             <Circles />
             {/*avatar img*/}
             <motion.div
@@ -103,8 +141,50 @@ function About() {
                 <Avatar />
             </motion.div>
             <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
-                <div>text</div>
-                <div>
+                {/*text*/}
+                <div className='flex-1 flex flex-col justify-center'>
+                    <h2 className='h2'>Captivating <span className='text-accent'>stories</span> birth magnificent designs</h2>
+                    <p className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>10 years ago, I began freelancing as developer. Since then, I,ve done remote work for
+                    agencies, consulted for startups, and collaborated on digital products for business and consumer use</p>
+                    {/*counters*/}
+                    <div>
+                        <div className='flex flex-1 xl:gap-x-6'>
+                            {/*experience*/}
+                            <div className='relative flex-1 after:w-[1px] after:h-full
+                            after:bg-white/10 after:absolute after:top-0 after:right-0'>
+                                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                                    <CountUp start={0} end={10}  duration={5}/> +
+                                </div>
+                                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Year of experience</div>
+                            </div>
+                            {/*clients*/}
+                            <div className='relative flex-1 after:w-[1px] after:h-full
+                            after:bg-white/10 after:absolute after:top-0 after:right-0'>
+                                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                                    <CountUp start={0} end={250}  duration={5}/> +
+                                </div>
+                                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Satisfied clients</div>
+                            </div>
+                            {/*projects*/}
+                            <div className='relative flex-1 after:w-[1px] after:h-full
+                            after:bg-white/10 after:absolute after:top-0 after:right-0'>
+                                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                                    <CountUp start={0} end={650}  duration={5}/> +
+                                </div>
+                                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Finished projects</div>
+                            </div>
+                            {/*awards*/}
+                            <div className='relative flex-1'>
+                                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                                    <CountUp start={0} end={8}  duration={5}/> +
+                                </div>
+                                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Winning awards</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/*info*/}
+                <div className='flex flex-col w-full xl:max-w-[48%] h-[480px]'>
                     <div className='flex gap-x-4 xl:gap-x-10 mx-auto xl:mx-0 mb-4'>
                         {aboutData.map((item, itemIndex) => {
                             return (
@@ -119,12 +199,24 @@ function About() {
                             )
                         })}
                     </div>
-                    <div>
+                    <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-x-4 items-center xl:items-start'>
                         {aboutData[index].info.map((item, itemIndex) => {
                             return (
-                                <div key={itemIndex}>
+                                <div key={itemIndex} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
                                     {/*title*/}
-                                    <div>{item.title}</div>
+                                    <div className='font-light mb-2 md:mb-0'>{item.title}</div>
+                                    <div className='hidden md:flex'>-</div>
+                                    <div>{item.stage}</div>
+                                    <div className='flex gap-x-4'>
+                                        {/*icons*/}
+                                        {item.icons?.map((icon, itemIndex) => {
+                                            return (
+                                                <div className='text-2xl text-white' key={itemIndex}>
+                                                    {icon}
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
                                 </div>
                             )
                         })}
