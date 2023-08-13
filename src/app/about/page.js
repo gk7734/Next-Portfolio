@@ -128,7 +128,7 @@ function About() {
     const [index, setIndex] = useState(0)
     console.log(index)
     return (
-        <div className='h-full bg-primary/30 py-32 text-center xl:text-left' onContextMenu={handleContextMenu} onMouseDown={handleMouseDown} onDragStart={handleMouseDown}>
+        <div className='h-full bg-primary/30 py-32 text-center xl:text-left mx-auto p-4 overflow-x-hidden' onContextMenu={handleContextMenu} onMouseDown={handleMouseDown} onDragStart={handleMouseDown}>
             <Circles />
             {/*avatar img*/}
             <motion.div
@@ -140,7 +140,7 @@ function About() {
             >
                 <Avatar />
             </motion.div>
-            <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
+            <div className='container mx-auto p-4 overflow-x-hidden xl:overflow-x-visible h-full flex flex-col items-center xl:flex-row gap-x-6'>
                 {/*text*/}
                 <div className='flex-1 flex flex-col justify-center'>
                     <h2 className='h2'>Captivating <span className='text-accent'>stories</span> birth magnificent designs</h2>
@@ -148,10 +148,10 @@ function About() {
                     agencies, consulted for startups, and collaborated on digital products for business and consumer use</p>
                     {/*counters*/}
                     <div>
-                        <div className='flex flex-1 xl:gap-x-6'>
+                        <div className='grid grid-cols-2 md:grid-cols-4 xl:flex xl:gap-x-6'>
                             {/*experience*/}
                             <div className='relative flex-1 after:w-[1px] after:h-full
-                            after:bg-white/10 after:absolute after:top-0 after:right-0'>
+                            after:bg-white/10 after:absolute after:top-0 after:right-0 md:after:invisible'>
                                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                                     <CountUp start={0} end={10}  duration={5}/> +
                                 </div>
@@ -159,7 +159,7 @@ function About() {
                             </div>
                             {/*clients*/}
                             <div className='relative flex-1 after:w-[1px] after:h-full
-                            after:bg-white/10 after:absolute after:top-0 after:right-0'>
+                            after:bg-white/10 after:absolute after:top-0 after:right-0 md:after:invisible'>
                                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                                     <CountUp start={0} end={250}  duration={5}/> +
                                 </div>
@@ -167,14 +167,14 @@ function About() {
                             </div>
                             {/*projects*/}
                             <div className='relative flex-1 after:w-[1px] after:h-full
-                            after:bg-white/10 after:absolute after:top-0 after:right-0'>
+                            after:bg-white/10 after:absolute after:top-0 after:right-0 md:after:visible'>
                                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                                     <CountUp start={0} end={650}  duration={5}/> +
                                 </div>
                                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Finished projects</div>
                             </div>
                             {/*awards*/}
-                            <div className='relative flex-1'>
+                            <div className='relative flex-1 md:after:hidden'>
                                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                                     <CountUp start={0} end={8}  duration={5}/> +
                                 </div>
