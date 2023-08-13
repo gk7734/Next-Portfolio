@@ -47,6 +47,11 @@ export default function Home() {
                     >
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos doloremque doloribus fugit magni minima modi nam nemo nesciunt nulla optio, reprehenderit tempora. A aliquid dolorem, excepturi hic libero nam nisi!
                     </motion.p>
+                    <motion.p variants={fadeIn('down', 0.3)}
+                              initial='hidden'
+                              animate='show'
+                              exit='hidden'
+                              className='xl:hidden visible text-[4px] max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>모바일 환경에서는 정상적으로 작동 안할 가능성이 있습니다.</motion.p>
                     {/*btn*/}
                     <motion.div variants={fadeIn('down', 0.4)}
                                 initial='hidden'
