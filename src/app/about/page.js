@@ -145,7 +145,7 @@ function About() {
                 <div className='flex-1 flex flex-col justify-center'>
                     <h2 className='h2'>Captivating <span className='text-accent'>stories</span> birth magnificent designs</h2>
                     <p className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>10 years ago, I began freelancing as developer. Since then, I,ve done remote work for
-                    agencies, consulted for startups, and collaborated on digital products for business and consumer use</p>
+                    agencies, and collaborated on digital products for business and consumer use</p>
                     {/*counters*/}
                     <div>
                         <div className='grid grid-cols-2 md:grid-cols-4 xl:flex xl:gap-x-6'>
