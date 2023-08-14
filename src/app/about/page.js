@@ -147,7 +147,7 @@ function About() {
                                initial='hidden'
                                animate='show'
                                exit='hidden'
-                               className='h2'>Captivating <span className='text-accent'>stories</span> birth magnificent designs</motion.h2>
+                               className='h2'>나의 개발 <span className='text-accent'>여정</span></motion.h2>
                     <motion.p
                         variants={fadeIn('right', 0.2)}
                         initial='hidden'
