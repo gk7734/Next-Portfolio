@@ -35,8 +35,8 @@ export default function Home() {
                                exit='hidden'
                                className='h1'
                     >
-                        Transforming Ideas <br/> Into{' '}
-                        <span className='text-accent'>Digital Reality</span>
+                        혁신을 추구하는 <br/>
+                        <span className='text-accent'>개발자 주강현</span>
                     </motion.h1>
                     {/*subtitle*/}
                     <motion.p variants={fadeIn('down', 0.3)}
@@ -45,7 +45,7 @@ export default function Home() {
                               exit='hidden'
                               className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
                     >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos doloremque doloribus fugit magni minima modi nam nemo nesciunt nulla optio, reprehenderit tempora. A aliquid dolorem, excepturi hic libero nam nisi!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam delectus eius est incidunt ipsam modi quo sit. Adipisci amet, atque consequatur culpa delectus dolor doloremque libero nostrum porro unde.
                     </motion.p>
                     <motion.p variants={fadeIn('down', 0.3)}
                               initial='hidden'

@@ -8,18 +8,22 @@ const workSlides = {
                 {
                     title: 'title',
                     path: '/thumb1.jpg',
+                    git: 'https://github.com/gk7734/Nextjs-Project'
                 },
                 {
                     title: 'title',
                     path: '/thumb2.jpg',
+                    git: 'https://github.com/gk7734/Nextjs-Project'
                 },
                 {
                     title: 'title',
                     path: '/thumb3.jpg',
+                    git: 'https://github.com/gk7734/Nextjs-Project'
                 },
                 {
                     title: 'title',
                     path: '/thumb4.jpg',
+                    git: 'https://github.com/gk7734/Nextjs-Project'
                 },
             ],
         },
@@ -28,18 +32,22 @@ const workSlides = {
                 {
                     title: 'title',
                     path: '/thumb4.jpg',
+                    git: 'https://github.com/gk7734/Nextjs-Project'
                 },
                 {
                     title: 'title',
                     path: '/thumb1.jpg',
+                    git: 'https://github.com/gk7734/Nextjs-Project'
                 },
                 {
                     title: 'title',
                     path: '/thumb2.jpg',
+                    git: 'https://github.com/gk7734/Nextjs-Project'
                 },
                 {
                     title: 'title',
                     path: '/thumb3.jpg',
+                    git: 'https://github.com/gk7734/Nextjs-Project'
                 },
             ],
         },
@@ -59,6 +67,8 @@ import {Pagination} from "swiper";
 
 // icons
 import {BsArrowRight} from 'react-icons/bs'
+import Link from "next/link";
+import {log} from "next/dist/server/typescript/utils";
 
 
 const WorkSlider = () => {
@@ -81,7 +91,7 @@ const WorkSlider = () => {
                                         <div
                                             className='relative rounded-lg flex items-center justify-center group'>
                                             <div
-                                                className='flex items-center justify-center relative'>
+                                                className='flex items-center justify-center relative group' key={index}>
                                                 {/*image*/}
                                                 <Image src={image.path} width={500} height={300} alt=''/>
                                                 {/*overlay gradient*/}
@@ -90,13 +100,13 @@ const WorkSlider = () => {
                                                 {/*title*/}
                                                 <div className='hidden group-hover:flex absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20
                                                transition-all duration-300'>
-                                                    <div className='flex items-center'>
+                                                    <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
                                                         {/*title part 1*/}
-                                                        <div>title part 1</div>
+                                                        <div className='delay-100'>LIVE</div>
                                                         {/*title part 2*/}
-                                                        <div>title part 2</div>
+                                                        <Link href={image.git} className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>PROJECT</Link>
                                                         {/*icon*/}
-                                                        <div>icon</div>
+                                                        <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'><BsArrowRight /></div>
                                                     </div>
                                                 </div>
                                             </div>
