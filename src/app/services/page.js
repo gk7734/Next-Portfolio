@@ -1,3 +1,5 @@
+'use client'
+
 // components
 import ServiceSlider from "../../components/ServiceSlider";
 import Bulb from "../../components/Bulb";
