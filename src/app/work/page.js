@@ -24,7 +24,7 @@ function Work() {
                   animate='show'
                   exit='hidden'
                   className='h2 xl:mt-12'>
-                My Work <span className='text-accent'>.</span>
+                나의 프로젝트 <span className='text-accent'>.</span>
               </motion.h2>
               <motion.p variants={fadeIn('up', 0.4)}
                         initial='hidden'
@@ -41,7 +41,6 @@ function Work() {
                         className='w-full xl:max-w-[65%]'>
               <WorkSlider />
             </motion.div>
-
           </div>
         </div>
         <Bulb />

@@ -59,12 +59,8 @@ const aboutData = [
         title: 'awards',
         info: [
             {
-                title: 'Webby Awards - Honoree',
-                stage: '2011 - 2012',
-            },
-            {
-                title: 'Adobe Design Achievement Awards - Finalist',
-                stage: '2009 - 2010',
+                title: '삼성 주니어 SW 창작대회 - 장려상',
+                stage: '2022',
             },
         ],
     },
@@ -72,34 +68,27 @@ const aboutData = [
         title: 'experience',
         info: [
             {
-                title: 'UX/UI Designer - XYZ Company',
-                stage: '2012 - 2023',
+                title: 'C 공부',
+                stage: '2020 - 202x',
             },
             {
-                title: 'Web Developer - ABC Agency',
-                stage: '2010 - 2012',
+                title: 'Python 공부',
+                stage: '2019 - 202x',
             },
             {
-                title: 'Intern - DEF Corporation',
-                stage: '2008 - 2010',
+                title: 'React 공부',
+                stage: '2023/8/1 - 202x',
+            },
+            {
+                title: 'Next.js 공부',
+                stage: '2023/8/10 - 202x',
             },
         ],
     },
     {
         title: 'credentials',
         info: [
-            {
-                title: 'Web Development - ABC University, LA, CA',
-                stage: '2011',
-            },
-            {
-                title: 'Computer Science Diploma - AV Technical Institute',
-                stage: '2009',
-            },
-            {
-                title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-                stage: '2006',
-            },
+
         ],
     },
 ];
@@ -126,7 +115,6 @@ function handleMouseDown(e) {
 
 function About() {
     const [index, setIndex] = useState(0)
-    console.log(index)
     return (
         <div className='h-full bg-primary/30 py-32 text-center xl:text-left mx-auto p-4' onContextMenu={handleContextMenu} onMouseDown={handleMouseDown} onDragStart={handleMouseDown}>
             {/*avatar img*/}
@@ -153,8 +141,7 @@ function About() {
                         initial='hidden'
                         animate='show'
                         exit='hidden'
-                        className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>10 years ago, I began freelancing as developer. Since then, I,ve done remote work for
-                    agencies and collaborated on digital products for business and consumer use</motion.p>
+                        className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias earum laboriosam necessitatibus non quo quos! Eligendi ipsam iure sint!</motion.p>
                     {/*counters*/}
                     <div>
                         <motion.div variants={fadeIn('right', 0.6)}
@@ -166,7 +153,7 @@ function About() {
                             <div className='relative flex-1 after:w-[1px] after:h-full
                             after:bg-white/10 after:absolute after:top-0 after:right-0'>
                                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                                    <CountUp start={0} end={10}  duration={5}/> +
+                                    <CountUp start={0.1} end={1}  duration={5}/> +
                                 </div>
                                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Year of experience</div>
                             </div>
@@ -174,7 +161,7 @@ function About() {
                             <div className='relative flex-1 after:w-[1px] after:h-full
                             after:bg-white/10 after:absolute after:top-0 after:right-0'>
                                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                                    <CountUp start={0} end={250}  duration={5}/> +
+                                    <CountUp start={0} end={4}  duration={5}/> +
                                 </div>
                                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Satisfied clients</div>
                             </div>
@@ -182,14 +169,14 @@ function About() {
                             <div className='relative flex-1 after:w-[1px] after:h-full
                             after:bg-white/10 after:absolute after:top-0 after:right-0'>
                                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                                    <CountUp start={0} end={650}  duration={5}/> +
+                                    <CountUp start={0} end={6}  duration={5}/> +
                                 </div>
                                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Finished projects</div>
                             </div>
                             {/*awards*/}
                             <div className='relative flex-1'>
                                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                                    <CountUp start={0} end={8}  duration={5}/> +
+                                    <CountUp start={0} end={1}  duration={5}/> +
                                 </div>
                                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Winning awards</div>
                             </div>
