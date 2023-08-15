@@ -85,12 +85,6 @@ const aboutData = [
             },
         ],
     },
-    {
-        title: 'credentials',
-        info: [
-
-        ],
-    },
 ];
 
 // components

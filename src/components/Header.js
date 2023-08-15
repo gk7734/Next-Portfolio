@@ -1,6 +1,6 @@
 // next image
 import Image from "next/image";
-import ExImg from "../../public/logo.svg"
+import ExImg from "../../public/logo.png"
 
 // next link
 import Link from 'next/link'

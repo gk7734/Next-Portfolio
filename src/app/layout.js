@@ -17,6 +17,8 @@ export const metadata = {
 import Nav from '../components/Nav'
 import Header from '../components/Header'
 import TopLeftImg from '../components/TopLeftImg'
+import Image from "next/image";
+import Eximg from "../../public/site-bg.png"
 
 export default function RootLayout({ children }) {
   return (
