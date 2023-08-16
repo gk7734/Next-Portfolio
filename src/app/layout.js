@@ -1,5 +1,5 @@
 import './globals.css'
-import {Sora} from 'next/font/google'
+import {Sora} from '@next/font/google'
 
 // font setting
 const sora = Sora({
@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="ko">
       <body className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable}
        font-sora relative`}>
+        <Image className='overflow-hidden absolute -z-50' src={Eximg} alt='img' fill />
         <TopLeftImg />
         <Nav />
         <Header />

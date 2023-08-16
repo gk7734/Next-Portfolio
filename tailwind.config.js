@@ -29,8 +29,7 @@ module.exports = {
       },
       backgroundImage: {
         explosion: 'url("/bg-explosion.png")',
-        circles: 'url("/bg-circles.png")',
-        site: 'url("/site-bg.png")'
+        circles: 'url("/bg-circles.png")'
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',

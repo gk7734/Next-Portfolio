@@ -60,7 +60,7 @@ const aboutData = [
         info: [
             {
                 title: '삼성 주니어 SW 창작대회 - 장려상',
-                stage: '2022',
+                stage: '2021',
             },
         ],
     },

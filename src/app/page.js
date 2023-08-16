@@ -1,5 +1,4 @@
 'use client'
-import Image from 'next/image'
 
 // components
 import ParticlesContainer from "../components/ParticlesContainer";
@@ -35,7 +34,7 @@ export default function Home() {
                                exit='hidden'
                                className='h1'
                     >
-                        혁신을 추구하는 <br/>
+                        새로운 기술을 탐구하는 <br/>
                         <span className='text-accent'>개발자 주강현</span>
                     </motion.h1>
                     {/*subtitle*/}
