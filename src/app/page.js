@@ -34,8 +34,8 @@ export default function Home() {
                                exit='hidden'
                                className='h1'
                     >
-                        새로운 기술을 탐구하는 <br/>
-                        <span className='text-accent'>개발자 주강현</span>
+                        새로운 기술을 탐구하는 개발자<br/>
+                        <span className='text-accent'>주강현</span>
                     </motion.h1>
                     {/*subtitle*/}
                     <motion.p variants={fadeIn('down', 0.3)}
@@ -44,7 +44,7 @@ export default function Home() {
                               exit='hidden'
                               className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
                     >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam delectus eius est incidunt ipsam modi quo sit. Adipisci amet, atque consequatur culpa delectus dolor doloremque libero nostrum porro unde.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam aspernatur debitis deleniti, deserunt ea expedita explicabo fuga inventore, ipsam ipsum laborum nam nemo odio, perferendis quasi sequi suscipit unde.
                     </motion.p>
                     <motion.p variants={fadeIn('down', 0.3)}
                               initial='hidden'

@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="ko">
       <body className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable}
        font-sora relative`}>
-        <Image className='overflow-hidden absolute -z-50' src={Eximg} alt='img' fill />
+        <Image className='overflow-hidden absolute -z-50' src={Eximg} alt='bg-img' fill />
         <TopLeftImg />
         <Nav />
         <Header />

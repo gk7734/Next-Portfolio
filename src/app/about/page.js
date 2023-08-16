@@ -3,9 +3,9 @@
 import React, {useState} from "react";
 
 // icons
-import {FaCss3, FaHtml5, FaJs, FaReact, FaFigma, FaPython} from "react-icons/fa";
+import {FaCss3, FaHtml5, FaJs, FaReact, FaFigma, FaPython, FaJava} from "react-icons/fa";
 import {
-    SiCodepen,
+    SiCodepen, SiFirefox,
     SiGithub, SiMaterialdesign,
     SiNextdotjs,
     SiPycharm,
@@ -24,7 +24,8 @@ const aboutData = [
                     <FaC />,
                     <FaPython />,
                     <FaJs />,
-                    <SiTypescript />
+                    <SiTypescript />,
+                    <FaJava />
                 ]
             },
             {
@@ -37,8 +38,7 @@ const aboutData = [
                     <SiTypescript />,
                     <FaReact />,
                     <SiVuedotjs />,
-                    <SiNextdotjs />,
-
+                    <SiNextdotjs />
                 ],
             },
             {
@@ -50,7 +50,8 @@ const aboutData = [
                 icons: [
                     <SiWebstorm />,
                     <SiPycharm />,
-                    <SiGithub />
+                    <SiGithub />,
+                    <SiFirefox />
                 ],
             }
         ],
@@ -76,12 +77,20 @@ const aboutData = [
                 stage: '2019 - 202x',
             },
             {
+                title: 'LG CNS 아카데미 합격',
+                stage: '2023/3/24 - 2023/x/xx'
+            },
+            {
+                title: 'SK 스마틴 앱 챌린지 합격',
+                stage: '2023/6/1 - 2023/x/xx'
+            },
+            {
                 title: 'React 공부',
-                stage: '2023/8/1 - 202x',
+                stage: '2023/7/21 - 202x',
             },
             {
                 title: 'Next.js 공부',
-                stage: '2023/8/10 - 202x',
+                stage: '2023/7/30 - 202x',
             },
         ],
     },
