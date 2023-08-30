@@ -29,8 +29,7 @@ function Services() {
                                   initial='hidden'
                                   animate='show'
                                   exit='hidden'
-                                  className='mb-4 max-w-[400px] mx-auto lg:mx-0'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ea
-                            excepturi iure molestias nostrum, obcaecati officia sunt temporibus veritatis voluptates.</motion.p>
+                                  className='mb-4 max-w-[400px] mx-auto lg:mx-0'> 사용자 중심의 디자인, 효율적이고 가독성 높은 코드, 그리고 지속적인 기술 학습이 저의 개발 철학입니다.</motion.p>
                     </div>
                     {/*slider*/}
                     <motion.div variants={fadeIn('down', 0.6)}

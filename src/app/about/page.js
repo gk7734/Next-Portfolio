@@ -85,11 +85,19 @@ const aboutData = [
                 stage: '2023/6/1 - 2023/x/xx'
             },
             {
+                title: 'LG CNS 아카데미 본선 진출',
+                stage: '2023/7/30 - 202x',
+            },
+            {
                 title: 'React 공부',
-                stage: '2023/7/21 - 202x',
+                stage: '2023/7/23 - 202x',
             },
             {
                 title: 'Next.js 공부',
+                stage: '2023/7/30 - 202x',
+            },
+            {
+                title: 'LG CNS 아카데미 수료',
                 stage: '2023/7/30 - 202x',
             },
         ],

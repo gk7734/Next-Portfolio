@@ -25,27 +25,22 @@ const serviceData = [
     {
         icon: <RxCrop/>,
         title: 'Branding',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        description: '저의 아이덴티티는 지속적인 학습과 혁신을 통해 새로운 도전에 대응하며, 이러한 접근 방식이 제 브랜드의 가치를 높여주는 것이 아이덴티티 입니다.',
     },
     {
         icon: <RxPencil2/>,
         title: 'Design',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        description: '디자인에 대한 저의 접근 방식은 \'사용자 중심\'입니다. 사용자의 경험과 편의성을 최우선으로 생각하며, 직관적이고 깔끔한 디자인을 구현합니다.',
     },
     {
         icon: <RxDesktop/>,
         title: 'Development',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    },
-    {
-        icon: <RxReader/>,
-        title: 'Copywriting',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        description: '저에게는 개발은 꿈을 창출하는 것이라고 생각합니다. 그이유는 개발 공부하기 전에는 상상으로 했지만, 지금의 저는 상상을 했던 것을 현실로 구현합니다.',
     },
     {
         icon: <RxRocket/>,
         title: 'SEO',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        description: '\'SEO\'가 저에게는 나만의 꿈을 멀리 퍼트려주는 존재라고 생각합니다.',
     },
 ];
 
