@@ -30,8 +30,7 @@ function Work() {
                         initial='hidden'
                         animate='show'
                         exit='hidden'
-                        className='mb-4 max-w-[400px] mx-auto lg:mx-0'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ea
-                excepturi iure molestias nostrum, obcaecati officia sunt temporibus veritatis voluptates.</motion.p>
+                        className='mb-4 max-w-[400px] mx-auto lg:mx-0 text-3xl font-bold'>수많은 <span className={`text-accent`}>노력</span>과 <span className={`text-accent`}>성공</span>들</motion.p>
             </div>
             {/*slider*/}
             <motion.div variants={fadeIn('down', 0.6)}

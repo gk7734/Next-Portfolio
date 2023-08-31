@@ -152,7 +152,7 @@ function About() {
                         initial='hidden'
                         animate='show'
                         exit='hidden'
-                        className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias earum laboriosam necessitatibus non quo quos! Eligendi ipsam iure sint!</motion.p>
+                        className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>{/*나중에 추가*/}</motion.p>
                     {/*counters*/}
                     <div>
                         <motion.div variants={fadeIn('right', 0.6)}
