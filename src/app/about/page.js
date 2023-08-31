@@ -90,11 +90,11 @@ const aboutData = [
             },
             {
                 title: 'React 공부',
-                stage: '2023/7/23 - 202x',
+                stage: '2023/6/23 - 202x',
             },
             {
                 title: 'Next.js 공부',
-                stage: '2023/7/30 - 202x',
+                stage: '2023/6/30 - 202x',
             },
             {
                 title: 'LG CNS 아카데미 수료',
