@@ -7,22 +7,22 @@ const workSlides = {
             images: [
                 {
                     title: 'title',
-                    path: '/thumb1.jpg',
-                    git: 'https://github.com/gk7734/Nextjs-Project'
+                    path: '/port1.png',
+                    git: 'https://github.com/gk7734/Next-Portfolio'
                 },
                 {
                     title: 'title',
-                    path: '/thumb2.jpg',
-                    git: 'https://github.com/gk7734/Nextjs-Project'
+                    path: '/port2.png',
+                    git: 'https://github.com/gk7734/WebDesign'
                 },
                 {
                     title: 'title',
-                    path: '/thumb3.jpg',
-                    git: 'https://github.com/gk7734/Nextjs-Project'
+                    path: '/port3.png',
+                    git: 'https://github.com/gk7734/ReactLearn'
                 },
                 {
                     title: 'title',
-                    path: '/thumb4.jpg',
+                    path: '/port4.png',
                     git: 'https://github.com/gk7734/Nextjs-Project'
                 },
             ],
@@ -31,23 +31,23 @@ const workSlides = {
             images: [
                 {
                     title: 'title',
-                    path: '/thumb4.jpg',
-                    git: 'https://github.com/gk7734/Nextjs-Project'
+                    path: '/port5.png',
+                    git: 'https://github.com/gk7734/Gk-Toy'
                 },
                 {
                     title: 'title',
-                    path: '/thumb1.jpg',
-                    git: 'https://github.com/gk7734/Nextjs-Project'
+                    path: '/port1.png',
+                    git: 'https://github.com/gk7734/Next-Portfolio'
                 },
                 {
                     title: 'title',
-                    path: '/thumb2.jpg',
-                    git: 'https://github.com/gk7734/Nextjs-Project'
+                    path: '/port2.png',
+                    git: 'https://github.com/gk7734/WebDesign'
                 },
                 {
                     title: 'title',
-                    path: '/thumb3.jpg',
-                    git: 'https://github.com/gk7734/Nextjs-Project'
+                    path: '/port3.png',
+                    git: 'https://github.com/gk7734/ReactLearn'
                 },
             ],
         },
