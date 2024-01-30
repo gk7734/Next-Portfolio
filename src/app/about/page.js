@@ -5,8 +5,8 @@ import React, {useState} from "react";
 // icons
 import {FaCss3, FaHtml5, FaJs, FaReact, FaFigma, FaPython, FaJava} from "react-icons/fa";
 import {
-    SiCodepen, SiFirefox,
-    SiGithub, SiMaterialdesign,
+    SiCodepen, SiExpress, SiFirefox,
+    SiGithub, SiMaterialdesign, SiNestjs,
     SiNextdotjs,
     SiPycharm,
     SiTailwindcss, SiTypescript, SiVuedotjs,
@@ -38,7 +38,9 @@ const aboutData = [
                     <SiTypescript />,
                     <FaReact />,
                     <SiVuedotjs />,
-                    <SiNextdotjs />
+                    <SiNextdotjs />,
+                    <SiExpress />,
+                    <SiNestjs />
                 ],
             },
             {
@@ -60,8 +62,8 @@ const aboutData = [
         title: 'awards',
         info: [
             {
-                title: '삼성 주니어 SW 창작대회 - 장려상',
-                stage: '2021',
+                title: 'LG CNS AI 지니어스 아카데미 - 최우수',
+                stage: '2023',
             },
         ],
     },
@@ -98,7 +100,19 @@ const aboutData = [
             },
             {
                 title: 'LG CNS 아카데미 수료',
-                stage: '2023/7/30 - 202x',
+                stage: '2023/7/30 - 2023',
+            },
+            {
+                title: 'SK 스마틴 앱 챌린지 본선 탈락',
+                stage: '2023/6/18 - 2023',
+            },
+            {
+                title: 'LG CNS 아카데미 최우수상',
+                stage: '2023/6/18 - 2023',
+            },
+            {
+                title: 'NestJS 공부',
+                stage: '2023/12/1 - 202x',
             },
         ],
     },

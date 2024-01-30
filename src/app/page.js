@@ -21,7 +21,7 @@ function handleMouseDown(e) {
 
 export default function Home() {
     return (
-        <div className='bg-primary/60 h-full ' onContextMenu={handleContextMenu} onMouseDown={handleMouseDown} onDragStart={handleMouseDown}>
+        <div className='bg-[#181226] h-full ' onContextMenu={handleContextMenu} onMouseDown={handleMouseDown} onDragStart={handleMouseDown}>
             {/*text*/}
             <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30
             to-black/10'>
@@ -45,8 +45,8 @@ export default function Home() {
                               className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
                     >
                         안녕하세요! 저는 주강현입니다. 현재 대구소프트웨어마이스터고등학교에서 공부하고 있습니다.
-                        주로 Next.js, React.js, Vue.js와 같은 프론트엔드 기술 스택을 활용하여 저만의 웹페이지를 만들어보고 있습니다.
-                        저의 목표는 항상 최신 프론트엔드 동향과 기술을 익히고 적용하는 것 이고,
+                        주로 Next.js, React.js, Vue.js와 같은 프론트엔드 기술 스택과 Express.js NestJS 백엔드 기술 스택을 활용하여 저만의 웹페이지를 만들어보고 있습니다.
+                        저의 목표는 항상 새롭고 이로운 기술을 익히고 적용하는 것 이고,
                         대구소프트웨어마이스터고등학교에서 배운 지식과 경험을 받고 저는 더욱 더 성장 해나갈 것입니다.
                     </motion.p>
                     <motion.p variants={fadeIn('down', 0.3)}

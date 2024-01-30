@@ -36,8 +36,8 @@ const workSlides = {
                 },
                 {
                     title: 'title',
-                    path: '/port1.png',
-                    git: 'https://github.com/gk7734/Next-Portfolio'
+                    path: '/port6.png',
+                    git: 'https://github.com/WebVending/Front-end'
                 },
                 {
                     title: 'title',
